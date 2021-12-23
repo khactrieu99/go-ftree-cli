@@ -7,5 +7,5 @@ import (
 
 func main() {
 	args := model.GetArguments()
-	fmt.Println(args.Path)
+	model.GetFileTree(args.Path, args.Deep)
 }
