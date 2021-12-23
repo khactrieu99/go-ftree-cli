@@ -1,11 +1,11 @@
-package ftree
+package utils
 
 import (
 	"fmt"
 	"os"
 )
 
-func HandleError(err *Error) {
-	fmt.Print("")
-	os.Exit()
+func HandleError(e error) {
+	fmt.Fprintf(os.Stderr, "%v\n", e.Error())
+	os.Exit(-1)
 }
