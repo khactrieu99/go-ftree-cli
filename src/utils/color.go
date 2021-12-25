@@ -5,9 +5,9 @@ import (
 )
 
 func PrintWithColor(filename string, isDir bool) {
-	if isDirs {
-		color.Yellow(filename)
+	if isDir {
+		color.Cyan(filename)
 		return
 	}
-	color.White(filename)
+	color.Green(filename)
 }
