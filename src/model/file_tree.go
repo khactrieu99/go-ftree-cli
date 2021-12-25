@@ -26,6 +26,7 @@ func loop(curPath string, curDeep int, maxDeep int) {
 	}
 	
 	for _, f := range files {
+
 		// do nothing if file is hiding
 		if strings.HasPrefix(f.Name(), ".") {
 			continue
